@@ -26,7 +26,7 @@ import kr.or.nextit.member.model.Member;
 @Controller
 @RequestMapping("/board")
 public class BoardController {
-	
+	// 주석 추가
 	@Autowired
 	BoardService boardService;
 	
