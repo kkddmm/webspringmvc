@@ -33,27 +33,27 @@ public class BoardUnitTest {
 		int afterCount = mapper.selectBoardCount(null);
 		
 		// 테스트
-		assertThat(beforeCount, is(afterCount+1));
+		assertThat(beforeCount, is(afterCount-1));
 	}
 	
-	@Test
-	public void updateTest() throws Exception {
-		// 처음 프로젝트 실행될 때 application-context.xml파일이 로딩되는데
-		// 테스트할 때 동일한 작업을 실행해주기 위해서
-		ApplicationContext context = new GenericXmlApplicationContext("application-context.xml");
-		BoardMapper mapper = context.getBean("boardMapper", BoardMapper.class);
-		
-		// 1. 게시글 조회(글번호로)
-		// 2. 글번호에 해당하는 게시글 수정
-		// 3. 글번호로 게시글조회한 값과 수정할 때 입력된 값을 비교
-		
-		Board board = new Board();
-		board.setBo_seq_no(1);
-		board = mapper.selectBoard(board.getBo_seq_no());
-		board.getBo_content();
-		board = mapper.selectBoard(board.getBo_seq_no());
-		board.setBo_content("수정된 데이터");
-		int afterBoard = mapper.updateBoard(board);		
-	}
+//	@Test
+//	public void updateTest() throws Exception {
+//		// 처음 프로젝트 실행될 때 application-context.xml파일이 로딩되는데
+//		// 테스트할 때 동일한 작업을 실행해주기 위해서
+//		ApplicationContext context = new GenericXmlApplicationContext("application-context.xml");
+//		BoardMapper mapper = context.getBean("boardMapper", BoardMapper.class);
+//		
+//		// 1. 게시글 조회(글번호로)
+//		// 2. 글번호에 해당하는 게시글 수정
+//		// 3. 글번호로 게시글조회한 값과 수정할 때 입력된 값을 비교
+//		
+//		Board board = new Board();
+//		board.setBo_seq_no(1);
+//		board = mapper.selectBoard(board.getBo_seq_no());
+//		board.getBo_content();
+//		board = mapper.selectBoard(board.getBo_seq_no());
+//		board.setBo_content("수정된 데이터");
+//		int afterBoard = mapper.updateBoard(board);		
+//	}
 
 }
