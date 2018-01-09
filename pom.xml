@@ -6,7 +6,7 @@
 	<artifactId>webspringmvc</artifactId>
 	<name>webspringmvc</name>
 	<packaging>war</packaging>
-	<version>1.0.0-BUILD-SNAPSHOT</version>
+	<version>1.0.0</version>
 	
 	<repositories>
 		<!-- Oracle Driver Repository -->
@@ -238,7 +238,7 @@
                 <configuration>
                     <source>${java-version}</source>
                     <target>${java-version}</target>
-		    <compilerVersion>${java-version}</compilerVersion>
+		   			<compilerVersion>${java-version}</compilerVersion>
                     <compilerArgument>-Xlint:all</compilerArgument>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
