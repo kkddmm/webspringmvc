@@ -7,7 +7,7 @@ import kr.or.nextit.board.model.Board;
 
 public interface BoardService {
 		// 총 게시글 수
-		public int getBoardConunt(Map<String, Object> paramMap) throws Exception;
+		public int getBoardCount(Map<String, Object> paramMap) throws Exception;
 		
 		// 게시글 목록 조회
 		public List<Board> getBoardList(Map<String, Object> paramMap) throws Exception;

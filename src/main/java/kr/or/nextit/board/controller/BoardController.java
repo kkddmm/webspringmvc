@@ -54,7 +54,7 @@ public class BoardController {
 		}
 		
 		// 총 게시글 수
-		totalCount = boardService.getBoardConunt(paramMap);
+		totalCount = boardService.getBoardCount(paramMap);
 		
 		// 페이징 처리
 		PagingUtil pagingUtil = new PagingUtil(currentPage, totalCount, pageSize, pageCount);

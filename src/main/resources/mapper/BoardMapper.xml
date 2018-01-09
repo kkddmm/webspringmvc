@@ -5,7 +5,7 @@
   
 <mapper namespace="kr.or.nextit.board.mapper.BoardMapper"><!-- 필수 고유해야함 -->
   
-  <select id="selectBoardConunt" resultType="int" parameterType="map"> 
+  <select id="selectBoardCount" resultType="int" parameterType="map"> 
   	SELECT
 	    count(*) as count
 	FROM

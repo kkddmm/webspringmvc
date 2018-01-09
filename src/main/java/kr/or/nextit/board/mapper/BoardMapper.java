@@ -11,7 +11,7 @@ import kr.or.nextit.board.model.Board;
 @Mapper
 public interface BoardMapper {
 	
-	public int selectBoardConunt(Map<String, Object> paramMap) throws Exception;
+	public int selectBoardCount(Map<String, Object> paramMap) throws Exception;
 	
 	public List<Board> selectBoardList(Map<String, Object> paramMap) throws Exception;
 	

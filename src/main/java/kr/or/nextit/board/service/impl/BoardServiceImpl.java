@@ -26,8 +26,8 @@ public class BoardServiceImpl implements BoardService{
 	FileItemMapper fileItemMapper;
 	
 	@Override
-	public int getBoardConunt(Map<String, Object> paramMap) throws Exception {
-		return boardMapper.selectBoardConunt(paramMap);
+	public int getBoardCount(Map<String, Object> paramMap) throws Exception {
+		return boardMapper.selectBoardCount(paramMap);
 	}
 
 	
